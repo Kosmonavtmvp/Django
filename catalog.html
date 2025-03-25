@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Каталог товаров</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav>
+        <ul>
+            <li class="menu-item"><a href="index.html">Главная</a></li>
+            <li class="menu-item active"><a href="catalog.html">Каталог</a></li>
+            <li class="menu-item">
+                <a onclick="toggleSubmenu(event)">Категории</a>
+                <ul class="submenu">
+                    <li><a href="auto.html">Автомобили</a></li>
+                    <li><a href="moto.html">Мотоциклы</a></li>
+                </ul>
+            </li>
+            <li class="menu-item"><a href="contacts.html">Контакты</a></li>
+        </ul>
+        <ul>
+            <li class="lower-item"><a href="https://student.skyeng.ru/profile">Личный кабинет</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <div class="header-block">
+            <h1>Каталог товаров</h1>
+            <p class="subtitle">Здесь будет представлен весь имеющийся в продаже товар.</p>
+        </div>
+
+        <div class="catalog-container">
+            <div class="catalog-card">
+                <div class="catalog-card-header">Автомобиль</div>
+                <div class="catalog-card-content">
+                    <div class="catalog-image">Изображение</div>
+                    <div class="catalog-description">Краткое описание товара. Основные характеристики и особенности.</div>
+                </div>
+                <div class="catalog-card-footer">
+                    <button class="details-btn">Подробнее</button>
+                </div>
+            </div>
+            <div class="catalog-card">
+                <div class="catalog-card-header">Автомобиль</div>
+                <div class="catalog-card-content">
+                    <div class="catalog-image">Изображение</div>
+                    <div class="catalog-description">Краткое описание товара. Основные характеристики и особенности.</div>
+                </div>
+                <div class="catalog-card-footer">
+                    <button class="details-btn">Подробнее</button>
+                </div>
+            </div>
+            <div class="catalog-card">
+                <div class="catalog-card-header">Мотоцикл</div>
+                <div class="catalog-card-content">
+                    <div class="catalog-image">Изображение</div>
+                    <div class="catalog-description">Краткое описание товара. Основные характеристики и особенности.</div>
+                </div>
+                <div class="catalog-card-footer">
+                    <button class="details-btn">Подробнее</button>
+                </div>
+            </div>
+            <div class="catalog-card">
+                <div class="catalog-card-header">Автомобиль</div>
+                <div class="catalog-card-content">
+                    <div class="catalog-image">Изображение</div>
+                    <div class="catalog-description">Краткое описание товара. Основные характеристики и особенности.</div>
+                </div>
+                <div class="catalog-card-footer">
+                    <button class="details-btn">Подробнее</button>
+                </div>
+            </div>
+            <div class="catalog-card">
+                <div class="catalog-card-header">Мотоцикл</div>
+                <div class="catalog-card-content">
+                    <div class="catalog-image">Изображение</div>
+                    <div class="catalog-description">Краткое описание товара. Основные характеристики и особенности.</div>
+                </div>
+                <div class="catalog-card-footer">
+                    <button class="details-btn">Подробнее</button>
+                </div>
+            </div>
+            <div class="catalog-card">
+                <div class="catalog-card-header">Мотоцикл</div>
+                <div class="catalog-card-content">
+                    <div class="catalog-image">Изображение</div>
+                    <div class="catalog-description">Краткое описание товара. Основные характеристики и особенности.</div>
+                </div>
+                <div class="catalog-card-footer">
+                    <button class="details-btn">Подробнее</button>
+                </div>
+            </div>
+
+        </div>
+    </main>
+
+    <script src="script.js"></script>
+<div id="productModal" class="modal">
+    <div class="modal-content">
+        <span class="close-modal">&times;</span>
+        <h2 id="modalTitle">Товар 1</h2>
+        <div class="modal-body">
+            <div class="modal-image">Изображение товара</div>
+            <div class="modal-description">
+                <h3>Подробное описание</h3>
+                <p>Здесь будет полное описание товара со всеми характеристиками, особенностями и техническими деталями.</p>
+                <ul>
+                    <li>Характеристика 1: Значение</li>
+                    <li>Характеристика 2: Значение</li>
+                    <li>Характеристика 3: Значение</li>
+                </ul>
+                <a href="contacts.html" class="buy-btn">Купить</a>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>
